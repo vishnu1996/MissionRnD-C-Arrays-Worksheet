@@ -27,7 +27,7 @@ struct student ** topKStudents(struct student *students, int len, int K)
 	struct student **top, temp;
 	if (students == NULL || len <= 0 || K <= 0)
 		return NULL;
-	top = (student**)malloc((K+1)*sizeof(student));
+	top = (student**)malloc((K)*sizeof(student));
 	for (i = 0; i < K; i++)
 	{
 		for (j = i + 1; j < len; j++)
