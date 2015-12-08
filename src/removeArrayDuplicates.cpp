@@ -24,9 +24,7 @@ void * removeArrayDuplicates(int *Arr, int len)
 		for (j = i - 1; j >= 0; j--)
 		{
 			if (Arr[j] == Arr[i])
-			{
-				found = 1;	 break;
-			}
+			{	found = 1;	   break;	}
 		}
 		if (found == 0)
 		{
